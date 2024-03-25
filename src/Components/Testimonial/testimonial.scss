@@ -1,0 +1,151 @@
+.test {
+    max-width: 1430px;
+    width: 100%;
+    margin: auto;
+    .container {
+        padding: 0 300px;
+        margin: 80px 0;
+    }
+}
+.test__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #dc780b;
+    opacity: 70%;
+}
+.test__heading {
+    font-family: "Philosopher";
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    text-align: center;
+    padding-right: 27px;
+    margin: 0;
+}
+.test__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    opacity: 70%;
+}
+.test__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.test__three {
+    width: 500px;
+    text-align: center;
+}
+.test__left--strelka,
+.test__next {
+    cursor: pointer;
+}
+.test__img {
+    margin-left: -30px;
+}
+.test__center--text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.text__box--name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 18.75px;
+    text-align: center;
+    margin: 17px 0 5px 0;
+}
+.text__box--text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: center;
+    opacity: 70%;
+    margin: 0;
+}
+@media (max-width: 1090px) {
+    .test {
+        .container {
+            padding: 0 100px;
+        }
+    }
+    .test__name {
+        font-size: 14px;
+    }
+    .test__heading {
+        font-size: 27px;
+    }
+    .test__text {
+        font-size: 14px;
+        line-height: 22px;
+        width: 80%;
+        margin: auto;
+    }
+    .test__box {
+        gap: 40px;
+    }
+    .test__center--text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .text__box--name {
+        font-size: 14px;
+    }
+    .text__box--text {
+        font-size: 11px;
+    }
+}
+@media (max-width: 888px) {
+    .test__text {
+        width: 100%;
+    }
+}
+@media (max-width: 770px) {
+    .test {
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+@media (max-width: 528px) {
+    .test__heading {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .test__text {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .test__box {
+        gap: 24px;
+    }
+    .test__center--text {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 0;
+    }
+    .text__box--name {
+        font-size: 14px;
+    }
+}
+@media (max-width: 355px) {
+    .test__heading {
+        font-size: 23px;
+        line-height: 25px;
+    }
+    .test__text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .test__box {
+        gap: 10px;
+    }
+}

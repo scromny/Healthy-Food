@@ -1,0 +1,151 @@
+.header {
+    max-width: 1350px;
+    width: 100%;
+    margin: auto;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+        margin: auto;
+
+        .header__left {
+            display: flex;
+            align-items: center;
+            .header__nav {
+                display: block;
+            }
+            .absolute {
+                display: block;
+            }
+            .header__ul {
+                display: flex;
+                gap: 40px;
+                list-style: none;
+                .header__li--a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 18.75px;
+                    color: #150c01;
+                    opacity: 60%;
+                    text-align: left;
+                    text-decoration: none;
+                    transition: 0.2s all ease;
+                    &:hover {
+                        color: #dc780b;
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+
+        .header__btn {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.75px;
+            text-align: left;
+            background-color: #dc780b;
+            border: #dc780b;
+            border-radius: 7px;
+            padding: 12px 28px;
+            cursor: pointer;
+            transition: 0.2s all ease;
+            &:hover {
+                color: #ffffff;
+                background-color: #ff8c00;
+            }
+        }
+    }
+}
+.menu__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.menubtn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/menu-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.closebtn {
+    display: none;
+}
+@media (max-width: 800px) {
+    .header {
+        .container {
+            .header__left {
+                .header__ul {
+                    gap: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .header {
+        .container {
+            padding: 10px 10px;
+            .header__left {
+                .header__nav {
+                    display: none;
+                }
+                .absolute {
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    top: 53px;
+                    right: 20px;
+                    animation: absolute 0.7s ease;
+                }
+                @keyframes absolute {
+                    from {
+                        transform: translateY(50%);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                .header__ul {
+                    flex-direction: column;
+                    background-color: white;
+                    margin: 0;
+                    padding: 27px 45px;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 20px gray;
+                    .closebtn {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        border: none;
+                        background-image: url(../img/close.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                    }
+                }
+            }
+            .header__btn {
+                font-size: 14px;
+                padding: 10px 24px;
+            }
+        }
+    }
+    .menubtn {
+        display: block;
+    }
+}

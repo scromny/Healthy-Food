@@ -1,0 +1,172 @@
+.hero {
+    margin: 0;
+    padding: 0;
+    .container {
+        max-width: 1330px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 50px;
+        margin: auto;
+    }
+}
+
+.hero__left {
+    width: 555px;
+}
+
+.hero__left--heading {
+    font-family: "Philosopher";
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+}
+
+.hero__left--text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    opacity: 70%;
+}
+
+.hero__left--btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero__btns--btn1 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    background-color: #dc780b;
+    border: #dc780b;
+    border-radius: 7px;
+    padding: 18px 38px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    &:hover {
+        color: #ffffff;
+        background-color: #ff8c00;
+    }
+}
+.hero__btns--btn2 {
+    color: #dc780b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    border: 1px solid #dc780b;
+    border-radius: 7px;
+    padding: 18px 38px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.2s all ease;
+    &:hover {
+        color: #ffffff;
+        background-color: #ff8c00;
+    }
+}
+
+.hero__img {
+    z-index: -10;
+    transform: translate(-33px, -33px);
+}
+@media (max-width: 1050px) {
+    .hero {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .hero__left--heading {
+        font-size: 40px;
+    }
+
+    .hero__left--text {
+        font-size: 14px;
+    }
+
+    .hero__left--btns {
+        gap: 20px;
+    }
+
+    .hero__btns--btn1 {
+        font-size: 14px;
+        padding: 15px 34px;
+    }
+    .hero__btns--btn2 {
+        font-size: 14px;
+        padding: 15px 34px;
+    }
+    .hero__left {
+        width: 420px;
+    }
+    .hero__img {
+        position: absolute;
+        right: 0;
+        width: 400px;
+    }
+}
+@media (max-width: 740px) {
+    .hero {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .hero__left--heading {
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .hero__left--text {
+        font-size: 12px;
+    }
+
+    .hero__left--btns {
+        gap: 10px;
+    }
+
+    .hero__btns--btn1 {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+    .hero__btns--btn2 {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+    .hero__left {
+        width: 350px;
+    }
+    .hero__img {
+        position: absolute;
+        right: 0;
+        width: 240px;
+    }
+}
+@media (max-width: 590px) {
+    .hero {
+        .container {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0;
+        }
+    }
+    .hero__left {
+        width: 300px;
+    }
+    .hero__left--heading {
+        margin: 0;
+    }
+    .hero__img {
+        position: relative;
+        width: 400px;
+    }
+}

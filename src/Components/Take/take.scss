@@ -1,0 +1,131 @@
+.take {
+    max-width: 1430px;
+    width: 100%;
+    margin: auto;
+    background-color: #FBF1E7;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 50px 0;
+        padding: 0 20px;
+    }
+}
+.take__left {
+    width: 555px;
+}
+.take__left--name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: #dc780b;
+    opacity: 70%;
+}
+.take__left--heading {
+    font-family: "Philosopher";
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    text-align: left;
+    padding-right: 27px;
+    margin: 0;
+}
+.take__left--text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    opacity: 70%;
+}
+.take__left--btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    .take__btns--btn1,
+    .take__btns--btn2 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 25px;
+        background-color: #150C01;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .take__btns--btn2 {
+        background-color: white;
+        color: #150C01;
+        border: 1.5px solid #150c017c;
+    }
+}
+@media (max-width: 790px) {
+    .take {
+        .container {
+            gap: 15px;
+        }
+    }
+    .take__left {
+        width: 100%;
+    }
+    .take__left--name {
+        font-size: 14px;
+    }
+    .take__left--heading {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .take__left--text {
+        font-size: 14px;
+    }
+    .take__left--btns {
+        gap: 15px;
+        .take__btns--btn1,
+        .take__btns--btn2 {
+            font-size: 14px;
+            padding: 6px 20px;
+        }
+    }
+    .take__img {
+        width: 250px;
+    }
+}
+@media (max-width: 500px) {
+    .take__left {
+        width: 320px;
+    }
+    .take__left--btns {
+        gap: 5px;
+        .take__btns--btn1,
+        .take__btns--btn2 {
+            font-size: 12px;
+            padding: 5px 18px;
+        }
+    }
+    .take__img {
+        width: 150px;
+        position: absolute;
+        right: 0;
+    }
+}
+@media (max-width: 608px) {
+    .take {
+        .container {
+            gap: 5px;
+            padding: 50px 20px;
+        }
+    }
+    .take__left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .take__img {
+        display: none;
+    }
+}
